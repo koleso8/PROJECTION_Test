@@ -1,0 +1,86 @@
+.header {
+  width: 100vw;
+  background-color: var(--dark);
+  color: var(--light);
+  @media only screen and (min-width: 1200px) {
+    color: var(--dark);
+    background-color: transparent;
+  }
+}
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (min-width: 1200px) {
+    align-items: end;
+  }
+}
+.header-logo {
+  fill: var(--light);
+  svg {
+    width: 28px;
+    height: 33px;
+    @media only screen and (min-width: 1200px) {
+      fill: var(--dark);
+      width: 66px;
+      height: 77px;
+    }
+  }
+}
+.header-menu-button {
+  font-family: 'Druk Cyr', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 0.915;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  @media only screen and (min-width: 1200px) {
+    padding: 64px 0 0 0;
+    font-size: 47px;
+    gap: 18px;
+  }
+}
+.header-menu-icon-dots {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  @media only screen and (min-width: 1200px) {
+    width: 42px;
+    height: 42px;
+  }
+}
+.header-menu-icon-dots span {
+  background-color: rgba(0, 208, 210, 1);
+  border-radius: 100%;
+  width: 7px;
+  height: 7px;
+  @media only screen and (min-width: 1200px) {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.header-menu-icon-dots span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header-menu-icon-dots span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header-menu-icon-dots span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.header-menu-icon-dots span:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

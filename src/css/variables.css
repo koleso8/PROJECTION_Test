@@ -1,0 +1,11 @@
+:root {
+  --font-family: 'Mona Sans', sans-serif;
+  --second-family: 'Druk Cyr', sans-serif;
+  --third-family: 'Inter', sans-serif;
+  --dark: #000;
+  --light: #fff;
+  --aqua: #00d0d2;
+  --disable: 0.66;
+  --disable-text: #a2a2a2;
+  --transition: 0.5s ease-in-out;
+}

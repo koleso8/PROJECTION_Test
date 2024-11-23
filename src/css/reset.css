@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -24,6 +28,15 @@ a {
 }
 
 button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -31,4 +44,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+svg {
+  padding: 0;
+  width: 16px;
+  height: 16px;
 }
