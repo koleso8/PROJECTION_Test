@@ -72,6 +72,30 @@
   }
 }
 
+.close-modal {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  @media only screen and (min-width: 1200px) {
+    gap: 19px;
+  }
+  svg {
+    fill: var(--light);
+  }
+}
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+  @media only screen and (min-width: 768px) {
+    width: 30px;
+    height: 30px;
+  }
+  @media only screen and (min-width: 1200px) {
+    width: 40px;
+    height: 40px;
+  }
+}
 .menu-wrap-first {
   align-items: center;
   @media only screen and (min-width: 1200px) {
@@ -236,7 +260,7 @@
   }
 }
 .menu-address-container a {
-  font-family: 'Mona-Sans';
+  font-family: 'Mona-Sans', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3;
