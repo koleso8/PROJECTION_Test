@@ -1,0 +1,426 @@
+/* ============================== HERO-SECTION======================= */
+
+.hero-section {
+  padding-top: 50px;
+  position: relative;
+  animation: background 3s ease-in-out forwards;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  @media only screen and (min-width: 1200px) {
+    padding-top: 233px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.01) 60%,
+        #000000 100%
+      ),
+      url('../img/desk_hero1x.jpg');
+  }
+}
+
+@keyframes background {
+  0% {
+    background-size: 120%;
+    filter: brightness(2);
+  }
+  100% {
+    background-size: 100%;
+    filter: brightness(1);
+  }
+}
+
+.just-a-month-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 4px;
+  svg:first-child {
+    width: 53px;
+    height: 20px;
+    @media only screen and (min-width: 1200px) {
+      width: 109px;
+      height: 42px;
+    }
+  }
+  svg:last-child {
+    width: 41px;
+    height: 19px;
+    fill: var(--dark);
+    stroke: var(--dark);
+    @media only screen and (min-width: 1200px) {
+      width: 83px;
+      height: 38px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    margin-bottom: 52px;
+  }
+}
+
+.just-a-month-block p {
+  font-family: 'Mona-sans', sans-serif;
+  font-size: 8px;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  line-height: 1.11;
+  text-align: center;
+  width: 110px;
+  @media only screen and (min-width: 1200px) {
+    width: 250px;
+    font-size: 18px;
+  }
+}
+
+.hero-title-block {
+  margin-bottom: 130px;
+}
+
+.hero-title-block p {
+  font-size: 62px;
+  line-height: 0.99;
+  width: 35vw;
+  font-family: 'Druk Cyr';
+  text-transform: uppercase;
+
+  font-weight: 700;
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 66px;
+    margin-bottom: 13px;
+  }
+}
+
+.hero-title-block h1 {
+  font-family: 'Druk Cyr';
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 0.99;
+  margin-bottom: 51px;
+  text-transform: uppercase;
+  @media only screen and (min-width: 1200px) {
+    font-size: 150px;
+    margin-bottom: 41px;
+  }
+}
+
+.join-link {
+  display: flex;
+  gap: 0.2vw;
+  cursor: pointer;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.join-hero-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 6px;
+  max-width: 232px;
+  height: 70px;
+
+  @media only screen and (min-width: 1200px) {
+    height: 122px;
+    max-width: 500px;
+  }
+}
+.join-hero-link-bage {
+  height: 100%;
+  width: 72%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  box-shadow: 0px 0px 1px rgba(25, 25, 25, 0.3);
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--dark);
+  @media only screen and (min-width: 1200px) {
+    font-size: 26px;
+    width: 74%;
+  }
+}
+.join-hero-link-icon {
+  height: 100%;
+  width: 70px;
+  background-color: var(--aqua);
+  align-items: center;
+  align-content: center;
+  @media only screen and (min-width: 1200px) {
+    width: 122px;
+  }
+}
+.join-hero-link-icon svg {
+  stroke: var(--dark);
+  width: 13px;
+  height: 13px;
+  @media only screen and (min-width: 1200px) {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.who-is-title {
+  display: none;
+
+  font-family: 'Druk Cyr';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--dark);
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 100px;
+    line-height: 0.99;
+    display: block;
+    margin-bottom: 41px;
+  }
+}
+
+.who-is-block {
+  display: block;
+  @media only screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+.who-is-list {
+  display: block;
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.who-is-item {
+  padding: 17px 27px 32px;
+  border-radius: 5.8vw;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 1);
+  /* height: 272px; */
+  height: 100%;
+
+  @media only screen and (min-width: 1200px) {
+    background-color: transparent;
+    height: 100%;
+
+    padding: 42px;
+    transition: 0.5s;
+    border-radius: 1.1vw;
+    outline: 2px solid rgba(255, 255, 255, 1);
+    outline-offset: -1px;
+  }
+}
+.who-is-list {
+  /* height: 490px; */
+}
+.who-is-list .who-is-item {
+  flex-basis: calc(100% / 3);
+  height: 50%;
+}
+
+.who-is-item.full {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 1);
+  gap: 7vw;
+
+  @media only screen and (min-width: 1200px) {
+    color: var(--dark);
+    background-color: transparent;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.3vw;
+  }
+}
+
+.who-is-item.full svg {
+  /* width: 65.6vw; */
+
+  @media only screen and (min-width: 1200px) {
+    transition: 0.5s;
+    width: 22vw;
+    fill: rgba(255, 255, 255, 1);
+  }
+}
+
+.who-is-item.full p {
+  color: rgba(255, 255, 255, 1);
+
+  @media only screen and (min-width: 1200px) {
+    /* width: 13vw; */
+    text-align: center;
+  }
+}
+
+.who-is-main-block .who-is-item {
+  position: relative;
+  /* height: 72px; */
+  background-color: rgba(0, 208, 210, 1);
+  margin-bottom: 3.2vw;
+  @media only screen and (min-width: 1200px) {
+    background-color: rgba(255, 255, 255, 1);
+    /* height: 490px; */
+    /* width: 447px; */
+  }
+}
+
+.who-is-item-number span {
+  font-family: 'Mona Sans', sans-serif;
+  font-size: 0.7vw;
+  line-height: 0.7vw;
+  font-weight: 700;
+}
+
+.who-is-item h4 {
+  font-size: 44px;
+  line-height: 0.99;
+  margin-bottom: 32px;
+
+  transition: 0.5s;
+  font-family: 'Druk Cyr';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--dark);
+  @media only screen and (min-width: 1200px) {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 10px;
+  }
+}
+
+.who-is-main-block .who-is-item p {
+  width: 12vw;
+}
+
+.who-is-item p {
+  width: 100% !important;
+  transition: 0.5s;
+  font-family: 'Mona Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 0.99;
+  color: rgba(0, 0, 0, 1);
+
+  line-height: 1.44;
+  @media only screen and (min-width: 1200px) {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.who-is-main-block .who-is-item p {
+  color: rgba(0, 0, 0, 1);
+}
+
+.who-is-main-block .who-is-item-number {
+  margin-bottom: 31px;
+
+  @media only screen and (min-width: 1200px) {
+    margin-bottom: 43px;
+  }
+}
+
+.who-is-main-block .who-is-item h4 {
+  color: rgba(0, 0, 0, 1);
+}
+
+.who-is-main-block svg {
+  transition: 0.5s;
+}
+
+.who-item-icon-block {
+  align-items: center;
+
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.who-item-icon-block svg {
+  transition: 0.5s;
+  fill: white;
+  /* width: 3.2vw; */
+  /* height: 3.2vw; */
+}
+
+.who-is-item-number .first {
+  transition: 0.5s;
+  color: rgba(0, 0, 0, 1);
+  @media only screen and (min-width: 1200px) {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+.who-is-item-number .second {
+  color: rgba(255, 255, 255, 0.33);
+  transition: 0.5s;
+}
+
+.who-is-main-block .who-is-item-number .first {
+  color: rgba(0, 0, 0, 1);
+}
+.who-is-main-block .who-is-item-number .second {
+  color: rgba(0, 0, 0, 0.33);
+}
+
+.who-is-item:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.who-is-item:hover p,
+.who-is-item:hover h4 {
+  color: rgba(0, 0, 0, 1);
+}
+
+.who-is-item:hover svg {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.who-is-item:hover .first {
+  color: rgba(0, 0, 0, 1);
+}
+.who-is-item:hover .second {
+  color: rgba(0, 0, 0, 0.33);
+}
+
+.who-is-item svg {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.who-is-item .first,
+.who-is-item .second {
+  font-size: 14px;
+  line-height: 0.99;
+}
+.who-is-item .second {
+  color: rgba(0, 0, 0, 0.33);
+}
+.who-is-item p,
+.who-is-item span,
+.who-is-item .first,
+.who-is-item h4 {
+}
+
+/* MOB________________________________________________________________________________________________!!!!!!!!!!!!!!! */
+/* .hero-section {
+  background-image: url(../img/mobile_hero1x.jpg);
+  background-size: 100%;
+  background-position: 0 -40vw;
+  padding: 13.3vw 0 15vw 0;
+} */
+
+.who-is-main-block svg {
+  /* position: absolute; */
+  /* top: 7.2vw; */
+  /* right: 7.2vw; */
+  /* margin-top: 0; */
+}
