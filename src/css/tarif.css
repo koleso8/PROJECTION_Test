@@ -1,0 +1,230 @@
+.tariff-section {
+  padding: 160px 0;
+}
+
+.tarif-title {
+  font-family: 'Druk Cyr';
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 80px;
+  font-size: 100px;
+}
+
+.tariff-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  @media only screen and (min-width: 1200px) {
+    gap: 2.7vw;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.tariff-item {
+  padding: 3vw 1.4vw;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.tariff-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.1vw;
+  padding: 0 1.6vw 0 0.9vw;
+}
+
+.tariff-title-container h3 {
+  font-family: 'Mona-Sans', sans-serif;
+  font-size: 2.8vw;
+  font-weight: 700;
+  line-height: 3.6vw;
+}
+
+.tariff-title-container svg {
+  width: 4.3vw;
+  height: 4.3vw;
+}
+
+.tariff-info-title-container {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  margin-bottom: 0.7vw;
+}
+
+.tariff-info-title-container h5 {
+  font-family: 'Mona-Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0.9;
+  /* white-space: nowrap; */
+}
+
+.tariff-info-item:not(:last-child) {
+  margin-bottom: 2.2vw;
+}
+
+.tariff-info-item p {
+  font-family: 'Mona-Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--dark);
+  opacity: 0.66;
+}
+
+/* .tariff-info-list {
+  margin-bottom: 2.6vw;
+  padding-left: 1.1vw;
+  width: 22vw;
+} */
+
+.tariff-price-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.7vw;
+}
+
+.tariff-price-container .current {
+  font-family: 'Inter';
+  font-size: 4.4vw;
+  font-weight: 700;
+  line-height: 5.8vw;
+}
+
+.tariff-price-container .old {
+  font-family: 'Inter';
+  font-size: 2.2vw;
+  font-weight: 700;
+  line-height: 2.9vw;
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.tariff-item .join-link {
+  width: 100%;
+}
+
+.tariff-item .app {
+  width: 100%;
+}
+
+.tariff-item .join-link-arrow {
+  flex-shrink: 0;
+}
+
+.tariff-btn-container {
+  margin-bottom: 2.1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.tariff-bottom-marker {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tariff-bottom-marker span {
+  font-family: 'Mona-Sans';
+  font-size: 0.8vw;
+  font-weight: 300;
+  line-height: 1.1vw;
+}
+
+.tariff-item .app {
+  font-size: 1.3vw;
+  /* white-space: nowrap; */
+  padding: 0;
+}
+
+.tariff-item.quantum {
+  border: 0.05vw solid rgba(0, 0, 0, 0.22);
+}
+
+.tariff-item.quantum .tariff-title-container svg {
+  fill: rgba(0, 208, 210, 1);
+}
+
+/* HYPER */
+.tariff-item.hyper {
+  background-color: rgba(0, 208, 210, 1);
+}
+
+.tariff-item.hyper .join-link-arrow {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.tariff-item.hyper .arrow-icon {
+  fill: white;
+}
+
+/* BLAST======= */
+
+.tariff-item.blast {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.tariff-item.blast p,
+.tariff-item.blast h5,
+.tariff-item.blast h3,
+.tariff-item.blast span {
+  color: rgba(255, 255, 255, 1);
+}
+
+.tariff-item.blast svg {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.tariff-item.blast .app {
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+}
+
+.tariff-item.blast .app::before,
+.tariff-item.blast .app::after,
+.tariff-item.blast .app .corner-top-right,
+.tariff-item.blast .app .corner-bottom-left {
+  border: 0.06vw solid rgba(0, 208, 210, 1);
+}
+
+.tariff-item.blast .app::before {
+  border-right: none;
+  border-bottom: none;
+  top: 0;
+  left: 0;
+}
+
+.tariff-item.blast .app::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.tariff-item.blast .app .corner-top-right {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.tariff-item.blast .app .corner-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.tariff-info-item.not-available {
+  opacity: 0.25;
+}
+
+.tarif-button {
+  margin-bottom: 46px;
+}
+
+.tarif-button button span svg {
+  stroke: var(--light);
+}
