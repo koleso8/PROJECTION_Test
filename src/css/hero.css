@@ -2,6 +2,7 @@
 
 .hero-section {
   padding-top: 50px;
+  padding-bottom: 120px;
   position: relative;
   animation: background 3s ease-in-out forwards;
   background-size: 100% 100%;
@@ -211,8 +212,8 @@
   @media only screen and (min-width: 1200px) {
     background-color: transparent;
     height: 100%;
-
-    padding: 42px;
+    position: relative;
+    padding: 27px;
     transition: 0.5s;
     border-radius: 1.1vw;
     outline: 2px solid rgba(255, 255, 255, 1);
@@ -220,7 +221,7 @@
   }
 }
 .who-is-list {
-  /* height: 490px; */
+  height: 400px;
 }
 .who-is-list .who-is-item {
   flex-basis: calc(100% / 3);
@@ -228,38 +229,44 @@
 }
 
 .who-is-item.full {
+  div {
+    display: flex;
+    justify-content: space-around;
+  }
   display: flex;
-  flex-direction: column;
   background-color: rgba(0, 0, 0, 1);
-  gap: 7vw;
+  gap: 26px;
+  flex-direction: column;
+  justify-content: center;
 
   @media only screen and (min-width: 1200px) {
     color: var(--dark);
+    gap: 74px;
     background-color: transparent;
     flex-basis: 100%;
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    gap: 3.3vw;
   }
 }
 
 .who-is-item.full svg {
-  /* width: 65.6vw; */
+  height: 11px;
+  width: 100px;
+  fill: var(--light);
 
   @media only screen and (min-width: 1200px) {
+    width: 160px;
+    height: 19px;
     transition: 0.5s;
-    width: 22vw;
-    fill: rgba(255, 255, 255, 1);
   }
 }
 
 .who-is-item.full p {
   color: rgba(255, 255, 255, 1);
+  text-align: center;
 
   @media only screen and (min-width: 1200px) {
-    /* width: 13vw; */
-    text-align: center;
+    width: 240px;
   }
 }
 
@@ -267,7 +274,6 @@
   position: relative;
   /* height: 72px; */
   background-color: rgba(0, 208, 210, 1);
-  margin-bottom: 3.2vw;
   @media only screen and (min-width: 1200px) {
     background-color: rgba(255, 255, 255, 1);
     /* height: 490px; */
@@ -283,7 +289,7 @@
 }
 
 .who-is-item h4 {
-  font-size: 44px;
+  font-size: 30px;
   line-height: 0.99;
   margin-bottom: 32px;
 
@@ -306,7 +312,7 @@
   width: 100% !important;
   transition: 0.5s;
   font-family: 'Mona Sans', sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 600;
   line-height: 0.99;
   color: rgba(0, 0, 0, 1);
@@ -325,7 +331,7 @@
   margin-bottom: 31px;
 
   @media only screen and (min-width: 1200px) {
-    margin-bottom: 43px;
+    margin-bottom: 4px;
   }
 }
 
@@ -334,23 +340,40 @@
 }
 
 .who-is-main-block svg {
+  fill: rgba(0, 0, 0, 1);
   transition: 0.5s;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  @media only screen and (min-width: 1200px) {
+    fill: var(--dark);
+    width: 210px;
+    height: 210px;
+    margin-top: 0;
+    top: 160px;
+    right: 90px;
+  }
 }
 
 .who-item-icon-block {
   align-items: center;
+  justify-content: space-between;
 
-  @media only screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
 }
 
 .who-item-icon-block svg {
   transition: 0.5s;
-  fill: white;
-  /* width: 3.2vw; */
-  /* height: 3.2vw; */
+  fill: var(--dark);
+  width: 44px;
+  height: 44px;
+  @media only screen and (min-width: 1200px) {
+    fill: var(--light);
+    width: 63px;
+    height: 63px;
+  }
 }
 
 .who-is-item-number .first {
@@ -392,10 +415,6 @@
   color: rgba(0, 0, 0, 0.33);
 }
 
-.who-is-item svg {
-  fill: rgba(0, 0, 0, 1);
-}
-
 .who-is-item .first,
 .who-is-item .second {
   font-size: 14px;
@@ -403,11 +422,6 @@
 }
 .who-is-item .second {
   color: rgba(0, 0, 0, 0.33);
-}
-.who-is-item p,
-.who-is-item span,
-.who-is-item .first,
-.who-is-item h4 {
 }
 
 /* MOB________________________________________________________________________________________________!!!!!!!!!!!!!!! */
@@ -417,10 +431,3 @@
   background-position: 0 -40vw;
   padding: 13.3vw 0 15vw 0;
 } */
-
-.who-is-main-block svg {
-  /* position: absolute; */
-  /* top: 7.2vw; */
-  /* right: 7.2vw; */
-  /* margin-top: 0; */
-}
