@@ -263,8 +263,8 @@
   fill: var(--light);
 
   @media only screen and (min-width: 1200px) {
-    width: 160px;
-    height: 19px;
+    width: 120px;
+    height: 16px;
     transition: 0.5s;
   }
 }
@@ -357,11 +357,11 @@
   right: 20px;
   @media only screen and (min-width: 1200px) {
     fill: var(--dark);
-    width: 210px;
-    height: 210px;
+    width: 180px;
+    height: 180px;
     margin-top: 0;
-    top: 160px;
-    right: 90px;
+    top: 190px;
+    right: 190px;
   }
 }
 
