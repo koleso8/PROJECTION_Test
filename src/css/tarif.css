@@ -25,13 +25,16 @@
 }
 
 .tariff-item {
-  padding: 3vw 1.4vw;
+  padding: 20px;
   background-color: rgba(255, 255, 255, 1);
 }
 
 .tariff-title-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  @media only screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
   align-items: center;
   margin-bottom: 3.1vw;
   padding: 0 1.6vw 0 0.9vw;
@@ -39,29 +42,38 @@
 
 .tariff-title-container h3 {
   font-family: 'Mona-Sans', sans-serif;
-  font-size: 2.8vw;
+  font-size: 40px;
   font-weight: 700;
   line-height: 3.6vw;
+  margin-bottom: 10px;
 }
 
 .tariff-title-container svg {
-  width: 4.3vw;
-  height: 4.3vw;
+  display: none;
+  @media only screen and (min-width: 1200px) {
+    display: unset;
+    width: 4.3vw;
+    height: 4.3vw;
+  }
 }
 
 .tariff-info-title-container {
   display: flex;
   align-items: center;
-  gap: 0.6vw;
-  margin-bottom: 0.7vw;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .tariff-info-title-container h5 {
   font-family: 'Mona-Sans', sans-serif;
-  font-size: 24px;
+
+  font-size: 16px;
   font-weight: 700;
   line-height: 0.9;
-  /* white-space: nowrap; */
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
 }
 
 .tariff-info-item:not(:last-child) {
@@ -70,17 +82,15 @@
 
 .tariff-info-item p {
   font-family: 'Mona-Sans', sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
+  line-height: 1;
   color: var(--dark);
   opacity: 0.66;
+  @media only screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
-
-/* .tariff-info-list {
-  margin-bottom: 2.6vw;
-  padding-left: 1.1vw;
-  width: 22vw;
-} */
 
 .tariff-price-container {
   display: flex;
@@ -88,22 +98,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 2.7vw;
-}
-
-.tariff-price-container .current {
-  font-family: 'Inter';
-  font-size: 4.4vw;
-  font-weight: 700;
-  line-height: 5.8vw;
-}
-
-.tariff-price-container .old {
-  font-family: 'Inter';
-  font-size: 2.2vw;
-  font-weight: 700;
-  line-height: 2.9vw;
-  text-decoration: line-through;
-  opacity: 0.4;
 }
 
 .tariff-item .join-link {
@@ -131,7 +125,7 @@
 }
 
 .tariff-bottom-marker span {
-  font-family: 'Mona-Sans';
+  font-family: 'Mona-Sans', sans-serif;
   font-size: 0.8vw;
   font-weight: 300;
   line-height: 1.1vw;
@@ -139,7 +133,6 @@
 
 .tariff-item .app {
   font-size: 1.3vw;
-  /* white-space: nowrap; */
   padding: 0;
 }
 

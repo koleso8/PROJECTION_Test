@@ -23,6 +23,11 @@ body {
   min-height: 100vh;
   margin: 0;
   background: #f9f9f9;
+  overflow-x: hidden;
+}
+
+body.isOpen {
+  overflow-y: hidden;
 }
 
 main {

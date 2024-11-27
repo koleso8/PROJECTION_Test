@@ -134,6 +134,9 @@
   }
 }
 .join-hero-link-bage {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+
   height: 100%;
   width: 72%;
   display: flex;
@@ -156,6 +159,61 @@
     width: 74%;
   }
 }
+.join-hero-link:hover,
+.join-hero-link:focus {
+  .border1 {
+    transform: matrix(2.4, 0, 0, 2.4, 12, 12);
+    transition: transform 0.5s ease-in-out;
+  }
+  .border2 {
+    transform: matrix(0, 2.4, -2.4, 0, -12, 12);
+    transition: transform 0.5s ease-in-out;
+  }
+  .border3 {
+    transform: matrix(-0, -2.4, 2.4, -0, 12, -12);
+    transition: transform 0.5s ease-in-out;
+  }
+  .border4 {
+    transform: matrix(-2.4, 0, 0, -2.4, -12, -12);
+    transition: transform 0.5s ease-in-out;
+  }
+  .join-hero-link-icon svg {
+    stroke: var(--light);
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+.border1 {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  transition: transform 0.5s ease-in-out;
+}
+.border2 {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  transform: rotate(90deg);
+  transition: transform 0.5s ease-in-out;
+}
+.border3 {
+  position: absolute;
+  bottom: 0;
+  left: -2px;
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease-in-out;
+}
+.border4 {
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-in-out;
+}
+
 .join-hero-link-icon {
   height: 100%;
   width: 70px;
@@ -167,6 +225,7 @@
   }
 }
 .join-hero-link-icon svg {
+  transition: transform 0.5s ease-in-out;
   stroke: var(--dark);
   width: 13px;
   height: 13px;
@@ -360,8 +419,8 @@
     width: 180px;
     height: 180px;
     margin-top: 0;
-    top: 190px;
-    right: 190px;
+    top: 50%;
+    right: 48%;
   }
 }
 
