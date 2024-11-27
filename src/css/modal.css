@@ -21,14 +21,19 @@
   background-image: url(../img/modal.png);
   background-repeat: no-repeat;
   background-size: auto;
-  padding: 20px;
+  padding: 40px;
   border-radius: 8px;
   position: relative;
   transform: scale(0.7);
   transition: transform 0.3s ease;
+  @media only screen and (min-width: 768px) {
+    background-size: contain;
+    padding: 60px 20px 40px 20px;
+    width: 380px;
+  }
   @media only screen and (min-width: 1200px) {
     background-size: contain;
-    width: 31vw;
+    width: 490px;
   }
 }
 
@@ -46,11 +51,12 @@
   top: 0;
   right: 14px;
   color: var(--aqua);
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     top: -18px;
     right: 14px;
     color: white;
   }
+
   font-size: 26px;
   font-weight: 900;
   cursor: pointer;
